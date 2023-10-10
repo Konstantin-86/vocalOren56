@@ -3,9 +3,7 @@ import axios from "axios";
 import Modal from "react-modal";
 import styles from "../css/SectionLessons.module.css";
 
-import aboutMe from "../assets/images/AboutMe/aboutMe6.png";
-import aboutMe1 from "../assets/images/Education/IMG1734.jpg";
-import aboutMe2 from "../assets/images/Education/IMG1740.jpg";
+import aboutMe1 from "../assets/images/Education/IMG_1644.jpg";
 import close from "../assets/images/icons/close.png";
 
 const SectionLessons = () => {
@@ -52,7 +50,7 @@ const SectionLessons = () => {
       priceSeasonTime4: "3600 руб",
       priceSeasonTime8Dicr: "Абонемент на 8 занятий",
       priceSeasonTime8: "7200 руб",
-      image: aboutMe,
+      image: aboutMe1,
     },
     {
       itemSubTitle: "Ансамбль для детей от 3-8 лет",
@@ -76,7 +74,7 @@ const SectionLessons = () => {
       priceSeasonTime4: "1500 руб",
       priceSeasonTime8Dicr: "Абонемент на 8 занятий",
       priceSeasonTime8: "3000 руб",
-      image: aboutMe2,
+      image: aboutMe1,
     },
   ];
   const adult = [
@@ -90,14 +88,14 @@ const SectionLessons = () => {
       priceSeasonTime4: "3600 руб",
       priceSeasonTime8Dicr: "Абонемент на 8 занятий",
       priceSeasonTime8: "7200 руб",
-      image: aboutMe,
+      image: aboutMe1,
     },
     {
       itemSubTitle: "Караоке-терапия 1 час",
       itemSubText: "adfad adsf ads adfa adf asdf adf adf adf ",
       priceOneTimeDicr: "Разовый",
       priceOneTime: "500 руб",
-      image: aboutMe2,
+      image: aboutMe1,
     },
     {
       itemSubTitle: "Караоке-терапия на ваш корпоратив",
@@ -105,7 +103,7 @@ const SectionLessons = () => {
         "Караоке-терапия - который помогает взрослым улучшить свои навыки пения и одновременно справиться с эмоциональными проблемами. В этой секции нашего сайта мы предлагаем уроки караоке-терапии для взрослых, которые помогут улучшить технику пения и научиться контролировать эмоции через музыку. Наши опытные преподаватели помогут вам научиться",
       priceOneTimeDicr: "1,5-2 часа в студии до 10 человек",
       priceOneTime: "500 руб",
-      image: aboutMe2,
+      image: aboutMe1,
     },
     {
       itemSubTitle: "Выступление на вашем празднике (без аппаратуры)",
@@ -113,7 +111,7 @@ const SectionLessons = () => {
         "Караоке-терапия - который помогает взрослым улучшить свои навыки пения и одновременно справиться с эмоциональными проблемами. В этой секции нашего сайта мы предлагаем уроки караоке-терапии для взрослых, которые помогут улучшить технику пения и научиться контролировать эмоции через музыку. Наши опытные преподаватели помогут вам научиться",
       priceOneTimeDicr: "1,5 часа-10 песен",
       priceOneTime: "3000 руб",
-      image: aboutMe2,
+      image: aboutMe1,
     },
     {
       itemSubTitle:
@@ -122,7 +120,7 @@ const SectionLessons = () => {
         "Караоке-терапия - который помогает взрослым улучшить свои навыки пения и одновременно справиться с эмоциональными проблемами. В этой секции нашего сайта мы предлагаем уроки караоке-терапии для взрослых, которые помогут улучшить технику пения и научиться контролировать эмоции через музыку. Наши опытные преподаватели помогут вам научиться",
       priceOneTimeDicr: "Одна песня",
       priceOneTime: "2000 руб",
-      image: aboutMe2,
+      image: aboutMe1,
     },
   ];
   const formActive = (e) => {

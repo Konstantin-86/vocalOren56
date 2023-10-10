@@ -12,7 +12,7 @@ const Header = () => {
   const ShowMenu = () => {
     SetMenuButton(!menuButton);
   };
-  console.log(window.navigator.userAgent);
+  /*  console.log(window.navigator.userAgent); */
 
   return (
     <>
