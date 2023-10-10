@@ -11,7 +11,8 @@ import "swiper/css/effect-cube";
 import "swiper/css/autoplay";
 import arrow from "../assets/images/icons/arrowRight.png";
 import close from "../assets/images/icons/close.png";
-
+import bigBg from "../assets/images/bgImages/mainbgBig.png";
+import smallBg from "../assets/images/bgImages/mainbgSmall.png";
 const MainContent = () => {
   const [formTitle, setFormTitle] = useState("");
   const [inputName, setInputName] = useState("");
@@ -88,6 +89,14 @@ const MainContent = () => {
   return (
     <>
       <div className={styles.mainContent}>
+        <div className={styles.mainBackGround}>
+          <picture>
+            <source media="(min-width: 768px)" srcSet={bigBg} />
+            <source media="(max-width: 767px)" srcSet={smallBg} />
+            <img src={bigBg} alt="Описание изображения" />
+          </picture>
+        </div>
+
         <div className={styles.mySwiperInner}>
           <Swiper
             modules={[EffectCube, Autoplay, A11y]}
