@@ -49,7 +49,7 @@ const Header = () => {
         </ul>
       </nav>
       <div className={styles.socials}>
-        <Link to="/" onClick={() => SetMenuButton(false)}>
+        <Link to="/vocalOren56" onClick={() => SetMenuButton(false)}>
           <img
             className={
               menuButton ? styles.socialsHome : styles.socialsHomeActive
