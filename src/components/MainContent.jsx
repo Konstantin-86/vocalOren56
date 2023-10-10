@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import styles from "../css/MainContent.module.css";
 import { Autoplay, A11y, EffectCube } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import axios from "axios";
 import Modal from "react-modal";
 
+import styles from "../css/MainContent.module.css";
 import "swiper/css";
 import "swiper/css/a11y";
 import "swiper/css/effect-cube";
@@ -13,6 +13,7 @@ import arrow from "../assets/images/icons/arrowRight.png";
 import close from "../assets/images/icons/close.png";
 import bigBg from "../assets/images/bgImages/mainbgBig.png";
 import smallBg from "../assets/images/bgImages/mainbgSmall.png";
+
 const MainContent = () => {
   const [formTitle, setFormTitle] = useState("");
   const [inputName, setInputName] = useState("");
@@ -73,18 +74,24 @@ const MainContent = () => {
     message += `<b>Отправитель:</b> ${inputName}\n`;
     message += `<b>Телефон:</b> ${formPhone}\n`;
     message += `<b>Доп Информация:</b> ${formArea}\n`;
-
-    axios
-      .post(URI_API, {
-        chat_id: ChatID,
-        parse_mode: "html",
-        text: message,
-      })
-      .then((res) => {
-        this.name.value = "";
-        this.tel.value = "";
-        this.text.value = "";
-      });
+    console.log(inputName.length);
+    if (inputName.length < 3) {
+      console.log(321321);
+    } else {
+      axios
+        .post(URI_API, {
+          chat_id: ChatID,
+          parse_mode: "html",
+          text: message,
+        })
+        .then((res) => {
+          setFormTitle(""), setInputName(""), setFormPhone("");
+          setFormArea("");
+          setTimeout(() => {
+            closeModal();
+          }, 2000);
+        });
+    }
   };
   return (
     <>

@@ -25,6 +25,8 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  position: absolute;
+  z-index: 2;
 }
 .socials img {
   cursor: pointer;
@@ -157,6 +159,7 @@
   background-color: hsla(0, 67%, 99%, 0.353);
   border-radius: 3px;
   box-shadow: 4px 17px 8px -1px rgba(116, 116, 116, 0.19);
+  z-index: 2;
 }
 .menuHide {
   position: absolute;

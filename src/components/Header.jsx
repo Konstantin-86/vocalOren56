@@ -62,7 +62,7 @@ const Header = () => {
             alt="inst.png"
           />
         </a>
-        <a href="https://t.me/vocalARINA">
+        <a href="https://t.me/vocal_ARINA_BUFF">
           <img
             className={menuButton ? styles.socialsTg : styles.socialsTgActive}
             src={teleg}

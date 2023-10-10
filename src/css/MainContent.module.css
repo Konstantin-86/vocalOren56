@@ -2,10 +2,6 @@
   position: relative;
   width: 100%;
   min-height: 100vh;
-  /* background-image: url(../assets/images/bgImages/mainbg.JPG);
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover; */
 }
 .mainBackGround {
   position: absolute;
@@ -154,7 +150,7 @@
 }
 @media (max-width: 1700px) {
   .mySwiperInner {
-    top: 5%;
+    top: 8%;
     width: 400px;
     right: 3%;
   }
@@ -191,7 +187,7 @@
     background-position: 45%;
   }
   .mainButton {
-    top: calc(100vh - 90px);
+    top: calc(100vh - 100px);
   }
   .mySwiperInner {
     top: 16px;

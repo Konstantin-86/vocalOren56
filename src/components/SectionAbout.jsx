@@ -7,12 +7,12 @@ import "swiper/css";
 import "swiper/css/a11y";
 import "swiper/css/autoplay";
 
-import dipl1 from "../assets/images/AboutMe/slider/diplom1.jpg";
-import dipl2 from "../assets/images/AboutMe/slider/diplom2.jpg";
-import dipl3 from "../assets/images/AboutMe/slider/diplom3.jpg";
-import dipl4 from "../assets/images/AboutMe/slider/diplom4.jpg";
-import dipl5 from "../assets/images/AboutMe/slider/diplom5.jpg";
-import dipl6 from "../assets/images/AboutMe/slider/diplom6.jpg";
+import dipl1 from "../assets/images/AboutMe/slider/diplom1.png";
+import dipl2 from "../assets/images/AboutMe/slider/diplom2.png";
+import dipl3 from "../assets/images/AboutMe/slider/diplom3.png";
+import dipl4 from "../assets/images/AboutMe/slider/diplom4.png";
+import dipl5 from "../assets/images/AboutMe/slider/diplom5.png";
+import dipl6 from "../assets/images/AboutMe/slider/diplom6.png";
 
 const SectionAbout = () => {
   return (
