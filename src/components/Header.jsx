@@ -41,11 +41,6 @@ const Header = () => {
               Видео
             </Link>
           </li>
-          {/* <li className={styles.list_item}>
-            <Link onClick={ShowMenu} to="/price">
-              Цены
-            </Link>
-          </li> */}
         </ul>
       </nav>
       <div className={styles.socials}>

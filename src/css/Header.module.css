@@ -10,7 +10,9 @@
   align-items: flex-end;
   justify-content: center;
   cursor: pointer;
+  z-index: 3;
 }
+
 .logo {
   position: absolute;
   width: 40px;
@@ -117,6 +119,7 @@
 }
 
 .headerLine1 {
+  margin-top: 5px;
   width: 50px;
   height: 2px;
   background-color: #000;
@@ -279,6 +282,10 @@
   }
 }
 @media (max-width: 450px) {
+  .header {
+    top: -20px;
+    justify-content: flex-end;
+  }
   .menuActive {
     height: 75vh;
   }

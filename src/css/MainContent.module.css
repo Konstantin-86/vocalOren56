@@ -56,6 +56,61 @@
   border: 10px solid #fff;
   border-radius: 46px;
 }
+.formInputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.formText {
+  color: black;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.formClose {
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+  overflow: hidden;
+  position: absolute;
+  top: 1%;
+  right: 1%;
+  cursor: pointer;
+}
+.formSendButton {
+  display: block;
+  width: 150px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+.formInputs input {
+  padding: 3px;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #bf8543;
+}
+.formInputs input:focus {
+  outline: none;
+  font-weight: 700;
+  border-bottom: 2px solid #bf8543;
+}
+.formInputs textarea {
+  padding: 3px;
+  width: 100%;
+  height: 150px;
+  border: 2px solid #bf8543;
+  resize: none;
+}
+.formInputs textarea:focus {
+  outline: none;
+  font-weight: 700;
+}
 @media (min-width: 1000px) {
   .mainButton:hover {
     width: 150px;
@@ -63,6 +118,10 @@
     border-radius: 6px;
     padding: 4px;
     padding-left: 15px;
+  }
+  .formSendButton:hover {
+    background-color: #941cb2;
+    color: #fff;
   }
   .mainButton:hover img {
     display: none;
@@ -115,8 +174,11 @@
   .mainContent {
     background-position: 45%;
   }
+  .mainButton {
+    top: calc(100vh - 90px);
+  }
   .mySwiperInner {
-    top: 8px;
+    top: 16px;
     width: 250px;
     right: 0%;
     left: 7px;

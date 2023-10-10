@@ -4,6 +4,12 @@ import Modal from "react-modal";
 import styles from "../css/SectionLessons.module.css";
 
 import aboutMe1 from "../assets/images/Education/IMG_1644.jpg";
+import qqww from "../assets/images/Education/qqww.jpg";
+import qqqwww from "../assets/images/Education/qqqwww.jpg";
+import rrrrr from "../assets/images/Education/rrrrr.jpg";
+import tttt from "../assets/images/Education/tttt.jpg";
+import yyyy from "../assets/images/Education/yyyy.jpg";
+import pppp from "../assets/images/Education/pppp.jpg";
 import close from "../assets/images/icons/close.png";
 
 const SectionLessons = () => {
@@ -21,21 +27,15 @@ const SectionLessons = () => {
       transform: "translate(-50%, -50%)",
       maxWidth: "80vw",
       padding: "20px",
-      height: "50vh",
+      maxHeight: "82vh",
     },
   };
-  let subtitle;
-  const [modalIsOpen, setIsOpen] = React.useState(false);
+  const [modalIsOpen, setIsOpen] = useState(false);
 
   function openModal(item) {
     setIsOpen(true);
     setFormTitle(item.itemSubTitle);
   }
-
-  function afterOpenModal() {
-    subtitle.style.color = "#f00";
-  }
-
   function closeModal() {
     setIsOpen(false);
   }
@@ -50,7 +50,7 @@ const SectionLessons = () => {
       priceSeasonTime4: "3600 руб",
       priceSeasonTime8Dicr: "Абонемент на 8 занятий",
       priceSeasonTime8: "7200 руб",
-      image: aboutMe1,
+      image: qqww,
     },
     {
       itemSubTitle: "Ансамбль для детей от 3-8 лет",
@@ -62,7 +62,7 @@ const SectionLessons = () => {
       priceSeasonTime4: "1750 руб",
       priceSeasonTime8Dicr: "Абонемент на 8 занятий",
       priceSeasonTime8: "3600 руб",
-      image: aboutMe1,
+      image: qqqwww,
     },
     {
       itemSubTitle: "Логоритмика для детей от 1,5-6",
@@ -74,7 +74,7 @@ const SectionLessons = () => {
       priceSeasonTime4: "1500 руб",
       priceSeasonTime8Dicr: "Абонемент на 8 занятий",
       priceSeasonTime8: "3000 руб",
-      image: aboutMe1,
+      image: rrrrr,
     },
   ];
   const adult = [
@@ -88,14 +88,14 @@ const SectionLessons = () => {
       priceSeasonTime4: "3600 руб",
       priceSeasonTime8Dicr: "Абонемент на 8 занятий",
       priceSeasonTime8: "7200 руб",
-      image: aboutMe1,
+      image: tttt,
     },
     {
       itemSubTitle: "Караоке-терапия 1 час",
       itemSubText: "adfad adsf ads adfa adf asdf adf adf adf ",
       priceOneTimeDicr: "Разовый",
       priceOneTime: "500 руб",
-      image: aboutMe1,
+      image: yyyy,
     },
     {
       itemSubTitle: "Караоке-терапия на ваш корпоратив",
@@ -103,7 +103,7 @@ const SectionLessons = () => {
         "Караоке-терапия - который помогает взрослым улучшить свои навыки пения и одновременно справиться с эмоциональными проблемами. В этой секции нашего сайта мы предлагаем уроки караоке-терапии для взрослых, которые помогут улучшить технику пения и научиться контролировать эмоции через музыку. Наши опытные преподаватели помогут вам научиться",
       priceOneTimeDicr: "1,5-2 часа в студии до 10 человек",
       priceOneTime: "500 руб",
-      image: aboutMe1,
+      image: pppp,
     },
     {
       itemSubTitle: "Выступление на вашем празднике (без аппаратуры)",
@@ -272,7 +272,6 @@ const SectionLessons = () => {
               <Modal
                 ariaHideApp={false}
                 isOpen={modalIsOpen}
-                onAfterOpen={afterOpenModal}
                 onRequestClose={closeModal}
                 style={customStyles}
               >
