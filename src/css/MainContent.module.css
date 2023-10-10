@@ -1,0 +1,126 @@
+.mainContent {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../assets/images/bgImages/mainbg.JPG);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+.mySwiperInner {
+  position: absolute;
+  width: 450px;
+  top: 8%;
+  right: 13%;
+  font-size: 45px;
+}
+.mainButton {
+  position: absolute;
+  right: 20px;
+  top: calc(100vh - 70px);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #941cb2;
+  cursor: pointer;
+  font-size: 14px;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.mainButton img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.SeconsSection {
+  width: 100%;
+  height: 100vh;
+  background-color: #3d0f0f;
+}
+.mainText {
+  padding-top: 30px;
+  background-color: #d1d1d1;
+  padding-bottom: 30px;
+}
+.title {
+  margin: 30px;
+  text-align: center;
+}
+.mainTextContent {
+  text-indent: 20px;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  font-size: 17px;
+  line-height: 33px;
+  font-weight: 400;
+  border: 10px solid #fff;
+  border-radius: 46px;
+}
+@media (min-width: 1000px) {
+  .mainButton:hover {
+    width: 150px;
+    height: 40px;
+    border-radius: 6px;
+    padding: 4px;
+    padding-left: 15px;
+  }
+  .mainButton:hover img {
+    display: none;
+  }
+}
+@media (max-width: 1000px) {
+  .mainButton {
+    width: 150px;
+    height: 40px;
+    border-radius: 6px;
+    padding: 4px;
+    padding-left: 15px;
+  }
+  .mainButton img {
+    display: none;
+  }
+}
+@media (max-width: 1700px) {
+  .mySwiperInner {
+    top: 5%;
+    width: 400px;
+    right: 3%;
+  }
+}
+@media (max-width: 1300px) {
+  .mySwiperInner {
+    font-size: 35px;
+  }
+}
+@media (max-width: 1300px) {
+  .mySwiperInner {
+    right: 0;
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 900px) {
+  .mainContent {
+    background-position: 60%;
+  }
+  .mySwiperInner {
+    top: 1%;
+    width: 400px;
+    right: 0;
+    left: 10%;
+    font-size: 20px;
+  }
+}
+@media (max-width: 450px) {
+  .mainContent {
+    background-position: 45%;
+  }
+  .mySwiperInner {
+    top: 8px;
+    width: 250px;
+    right: 0%;
+    left: 7px;
+    font-size: 18px;
+  }
+}
