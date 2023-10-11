@@ -1,7 +1,7 @@
 .SectionLessons {
   width: 100%;
   min-height: calc(100vh - 40px);
-  background-color: #bf8543;
+  background-color: #cfd0d1;
 }
 .container {
   max-width: 1200px;
@@ -22,14 +22,15 @@
   display: flex;
   justify-content: center;
   gap: 15px;
+  padding-bottom: 40px;
 }
 .itemInnerImage {
   padding: 5px;
   width: 50%;
-  height: 30%;
+  max-height: 470px;
   border-radius: 10px;
   overflow: hidden;
-  object-fit: contain;
+  object-fit: cover;
 }
 .itemDecrp {
   display: flex;
@@ -38,13 +39,21 @@
   width: 95%;
 }
 .itemSubText {
+  text-indent: 10px;
+  line-height: 25px;
   margin-bottom: 20px;
+}
+.itemSubText p {
+  font-weight: 700;
+  margin: 10px 0;
+}
+.itemSubText ul li {
+  margin-bottom: 5px;
 }
 .itemDecrpPrices {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
-  margin-bottom: 60px;
 }
 .preicesInner {
   cursor: pointer;
@@ -55,6 +64,7 @@
   border-radius: 10px;
   align-items: center;
   text-align: center;
+  background-color: #fff;
   transition: all 0.3s ease-in;
 }
 .preicesInner p {
@@ -84,8 +94,8 @@
 }
 
 .itemSubTitle {
-  font-size: 20px;
-  margin-bottom: 15px;
+  font-size: 22px;
+  margin-bottom: 40px;
   font-weight: 700;
 }
 

@@ -9,10 +9,14 @@ import vk from "../assets/images/icons/vk.png";
 
 const Header = () => {
   const [menuButton, SetMenuButton] = useState(false);
+  const [sectionLessons, setSectionLessons] = useState(false);
   const ShowMenu = () => {
     SetMenuButton(!menuButton);
+    setSectionLessons(false);
   };
-  /*  console.log(window.navigator.userAgent); */
+  const showLessons = () => {
+    setSectionLessons(!sectionLessons);
+  };
 
   return (
     <>
@@ -32,9 +36,41 @@ const Header = () => {
             </Link>
           </li>
           <li className={styles.list_item}>
-            <Link onClick={ShowMenu} to="/lessons">
+            <div onClick={showLessons}>
               Услуги и стоимость
-            </Link>
+              <Link
+                onClick={ShowMenu}
+                to="/lessonsAdult"
+                className={
+                  sectionLessons
+                    ? styles.SectionLessonsAdult
+                    : styles.SectionLessonsAdultActive
+                }
+              >
+                Взрослые
+              </Link>
+              <Link
+                onClick={ShowMenu}
+                to="/lessonsChildren"
+                className={
+                  sectionLessons
+                    ? styles.SectionLessonsChildren
+                    : styles.SectionLessonsChildrenActive
+                }
+              >
+                Дети
+              </Link>
+              <span
+                className={
+                  sectionLessons ? styles.arrowLine1Active : styles.arrowLine1
+                }
+              ></span>
+              <span
+                className={
+                  sectionLessons ? styles.arrowLine2Active : styles.arrowLine2
+                }
+              ></span>
+            </div>
           </li>
           <li className={styles.list_item}>
             <Link onClick={ShowMenu} to="/video">

@@ -21,6 +21,7 @@
   top: 1%;
   left: 2%;
 }
+
 .socials {
   width: 100%;
   display: flex;
@@ -184,6 +185,112 @@
   transition: all 0.3s ease-in-out;
   border-bottom: 2px solid transparent;
 }
+.list_item {
+  position: relative;
+}
+.list_item div {
+  cursor: pointer;
+}
+.SectionLessonsChildren {
+  position: absolute;
+  width: 100%;
+  padding: 5px;
+  bottom: -41px;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: #c0bcbc;
+  z-index: 3;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease;
+}
+.SectionLessonsAdult {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  padding: 5px;
+  bottom: -76px;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: #c0bcbc;
+  z-index: 3;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease;
+}
+.SectionLessonsChildrenActive {
+  position: absolute;
+  width: 100%;
+  padding: 5px;
+  bottom: -41px;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: #c0bcbc;
+  z-index: 3;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+.SectionLessonsAdultActive {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  padding: 5px;
+  bottom: -76px;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: #c0bcbc;
+  z-index: 3;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+.arrowLine1Active {
+  position: absolute;
+  top: 10px;
+  right: -23px;
+  transform: rotate(50deg);
+  display: block;
+  width: 13px;
+  height: 2px;
+  background-color: #000;
+  transition: all 0.3s ease;
+}
+.arrowLine2Active {
+  position: absolute;
+  top: 10px;
+  right: -15px;
+  transform: rotate(135deg);
+  display: block;
+  width: 13px;
+  height: 2px;
+  background-color: #000;
+  transition: all 0.3s ease;
+}
+.arrowLine1 {
+  position: absolute;
+  top: 10px;
+  right: -23px;
+  transform: rotate(-50deg);
+  display: block;
+  width: 13px;
+  height: 2px;
+  background-color: #000;
+  transition: all 0.3s ease;
+}
+.arrowLine2 {
+  position: absolute;
+  top: 10px;
+  right: -15px;
+  transform: rotate(50deg);
+  display: block;
+  width: 13px;
+  height: 2px;
+  background-color: #000;
+  transition: all 0.3s ease;
+}
 @media (min-width: 1000px) {
   .socials img:hover {
     scale: 1.1;
@@ -198,6 +305,12 @@
   .list_item a:hover {
     color: rgba(148, 28, 178, 1);
     border-bottom: 2px solid #941cb2;
+  }
+  .list_item a:hover .arrowLine1 {
+    background-color: rgba(148, 28, 178, 1);
+  }
+  .list_item a:hover .arrowLine2 {
+    background-color: rgba(148, 28, 178, 1);
   }
 }
 

@@ -1,4 +1,5 @@
 import React from "react";
+
 import styles from "../css/SectionVideo.module.css";
 
 import first from "../assets/images/sectionVideo/1.png";
