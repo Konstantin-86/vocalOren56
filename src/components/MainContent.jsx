@@ -127,10 +127,8 @@ const MainContent = () => {
             slidesPerView={1}
           >
             <SwiperSlide>Преподаватель вокала</SwiperSlide>
-            <SwiperSlide>
-              Индивидуальные занятия и групповые курсы онлайн и в студии
-            </SwiperSlide>
-            <SwiperSlide>Арина Якимцева</SwiperSlide>
+            <SwiperSlide>Логопед</SwiperSlide>
+            <SwiperSlide>Певица</SwiperSlide>
           </Swiper>
         </div>
         <div

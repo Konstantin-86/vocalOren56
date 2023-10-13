@@ -1,11 +1,13 @@
 import React, { useState } from "react";
-import styles from "../css/SectionAbout.module.css";
+import { Link } from "react-router-dom";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, A11y } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/a11y";
 import "swiper/css/autoplay";
+
+import styles from "../css/SectionAbout.module.css";
 
 import dipl1 from "../assets/images/AboutMe/slider/diplom1.png";
 import dipl2 from "../assets/images/AboutMe/slider/diplom2.png";
@@ -20,6 +22,11 @@ const SectionAbout = () => {
       <div className={styles.SectionAbout}>
         <div className={styles.container}>
           <h2 className={styles.title}>Обо мне</h2>
+          {/* https://t.me/vocal_ARINA_BUFF */}
+          <a href="https://t.me/share/url?url=https://t.me/vocal_ARINA_BUFF&text=YOUR_MESSAGE">
+            Написать сообщениевв333
+          </a>
+
           <div className={styles.SectionAboutInner}>
             <div className={styles.maintext}>
               Добро пожаловать на мой сайт по обучению вокала! Я предлагаю
@@ -59,10 +66,18 @@ const SectionAbout = () => {
               <ul>
                 Преподавательской деятельностью занимаюсь более 10-ти лет. В
                 студии Buff веду:
-                <li>✅логоритмику</li>
-                <li>✅вокальный ансамбль</li>
-                <li>✅индивидуальный вокал</li>
-                <li> ✅караоке-терапию</li>
+                <li>
+                  <Link to="/lessonsChildren">✅логоритмику</Link>
+                </li>
+                <li>
+                  <Link to="/lessonsChildren">✅вокальный ансамбль</Link>
+                </li>
+                <li>
+                  <Link to="/lessonsAdult">✅индивидуальный вокал</Link>
+                </li>
+                <li>
+                  <Link to="/lessonsAdult">✅караоке-терапию</Link>
+                </li>
               </ul>
             </div>
             <div className={styles.SectionAboutSlider}>
